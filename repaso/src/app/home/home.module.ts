@@ -5,7 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import { ConsumoApiService } from '../state/consumo-api.service';
 
 
 @NgModule({
@@ -13,9 +14,10 @@ import { HttpClient } from '@angular/common/http';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    HttpClientModule
   ],
   declarations: [HomePage],
-  providers: [HttpClient]
+  providers: [ConsumoApiService]
 })
 export class HomePageModule {}
