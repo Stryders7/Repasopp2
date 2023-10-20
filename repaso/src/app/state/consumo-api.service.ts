@@ -7,7 +7,7 @@ import {HttpClient} from '@angular/common/http';
 export class ConsumoApiService {
 
   constructor(
-    
+    private http : HttpClient
   ) { 
 
   }
