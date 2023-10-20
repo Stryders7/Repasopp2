@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>detalle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Nombre pelicula: {{pelicula?.title}}</ion-card-title>
+        <ion-card-subtitle>Director: {{pelicula?.director}}</ion-card-subtitle>
+        <ion-card-subtitle>Año de lanzamiento: {{pelicula?.release_date}}</ion-card-subtitle>
+        <ion-button type = "button" (click) ="volver()">Volver</ion-button>
+      </ion-card-header>
+    
+    </ion-card>
+  </div>
+
+</ion-content>
